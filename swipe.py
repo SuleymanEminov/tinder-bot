@@ -3,12 +3,20 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 from time import sleep
 
-EMAIL = 'suleyman.eminov22@gmail.com'
-PASSWORD = '7U4KM3n!'
+EMAIL = 'YOUR_EMAIL'
+PASSWORD = 'YOUR_PASSWORD'
+
 """
-set up chromedriver path and webdriver 
+    @author: Suleyman Eminov
+    @date: 2/20/2021
+    Description: This script swipes 100 people right on Tinder
+    This program takes 5 minutes 22 seconds overall
+        
 """
-chromedriver_path = 'C:\Program Files (x86)/chromedriver.exe'
+
+#set up chromedriver path and webdriver 
+
+chromedriver_path = 'C:\Program Files (x86)/chromedriver.exe' #change this to your local computer's chromdriver path
 webdriver = webdriver.Chrome(chromedriver_path)
 
 # now we can start navigating
