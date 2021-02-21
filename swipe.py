@@ -2,9 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import ElementClickInterceptedException, NoSuchElementException
 from time import sleep
-
-EMAIL = 'YOUR_EMAIL'
-PASSWORD = 'YOUR_PASSWORD'
+from security import security
 
 """
     @author: Suleyman Eminov
@@ -13,6 +11,12 @@ PASSWORD = 'YOUR_PASSWORD'
     This program takes 5 minutes 22 seconds overall
 
 """
+
+data = security()
+
+EMAIL = data.get_email()
+PASSWORD = data.get_password()
+
 
 #set up chromedriver path and webdriver 
 
