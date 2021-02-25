@@ -8,7 +8,7 @@ from security import security
     @author: Suleyman Eminov
     @date: 2/20/2021
     Description: This script swipes 100 people right on Tinder
-    This program takes 5 minutes 22 seconds overall
+    This program runs in 5 minutes 22 seconds overall
 
 """
 
