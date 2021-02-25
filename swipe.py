@@ -60,16 +60,16 @@ print(webdriver.title)
 
 sleep(10)
 
-allow_location = webdriver.find_element_by_xpath('//*[@id="t--1700653258"]/div/div/div/div/div[3]/button[1]')
+allow_location = webdriver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/button[1]') #Change modal-manager (Inspect button, copy and paste the xPath)
 allow_location.click()
 
 sleep(3)
-notifications = webdriver.find_element_by_xpath('//*[@id="t--1700653258"]/div/div/div/div/div[3]/button[2]')
+notifications = webdriver.find_element_by_xpath('//*[@id="modal-manager"]/div/div/div/div/div[3]/button[2]') #Change modal-manager (Inspect button, copy and paste the xPath)
 notifications.click()
 
 
 sleep(3)
-cookies = webdriver.find_element_by_xpath('//*[@id="t-339552546"]/div/div[2]/div/div/div[1]/button')
+cookies = webdriver.find_element_by_xpath('//*[@id="content"]/div/div[2]/div/div/div[1]/button') #change "content" ^^
 cookies.click()
 
 # hit like till there is an exception
@@ -81,7 +81,7 @@ for n in range(100):
 
     try:
         print("called")
-        like_button = webdriver.find_element_by_xpath('//*[@id="t-339552546"]/div/div[1]/div/main/div[1]/div/div/div[1]/div/div[2]/div[4]/button')
+        like_button = webdriver.find_element_by_xpath('//*[@id="content"]/div/div[1]/div/main/div[1]/div/div/div[1]/div/div[2]/div[4]/button') # change "content"
         like_button.click()
 
     #Catches the cases where there is a "Matched" pop-up in front of the "Like" button:
@@ -95,4 +95,4 @@ for n in range(100):
             sleep(2)
 
 
-raise Exception("stop")
+raise Exception("stop") # to not close the tab
